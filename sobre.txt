@@ -1,0 +1,70 @@
+BackEnd
+
+Termial - para criar node
+
+diretorio - npm init -y
+
+depois no console do vcode exec: npm install express
+
+
+FrontEnd 
+
+npx create-react-app `nomeaqui`    cria toda estrutura base do react
+
+npm install react-icons
+npm install react-router-dom
+npm install axios // fazer chamdas do backend no frontend
+
+instalar insomnia - melhor visual de teste como IE e atualizacao automatica
+
+instalar nodemon restart da aplicacao automatico
+ npm install nodemon -D *console code
+alter no package.json
+"scripts": {
+    "start": "nodemon index.js"
+
+addicionar em ctrl+shift+p settings-json: // para as funcoes predef em react ex div.log criar classe
+"emmet.syntaxProfiles": { "javascript": "jsx" },
+"emmet.includeLanguages": { "javascript": "javascriptreact" }
+
+
+// contador: const [counter, setCounter] = useState(0);
+     			//Array[valor, funcaoDeAtualizacao]
+
+   				 function increment() {
+     				 setCounter(counter + 1);
+
+    					  console.log(counter);
+   			 }
+
+
+
+
+
+
+BD
+instalar knexjs
+npm install knex 
+npm install sqlite3
+npx knex init
+migration *historico
+adicionar em knexfile.js
+migrations: {
+      directory: './src/database/migrations'
+    }
+console code
+npx knex migrate:make create_ongs
+criar tabelas e executar "npx knex migrate:latest" no console
+
+
+Modulo de seguranca - determina quem acessa a conexao
+npm install cors
+
+
+
+
+
+Iniciar
+node index.js
+npm start
+https://github.com/lucas-sachet/be-the-hero.git
